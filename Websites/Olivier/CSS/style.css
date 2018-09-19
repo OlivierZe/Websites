@@ -1,0 +1,464 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+p,h1,h2,a{
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* */
+/* --- Navigation - Start ---*/
+/* */
+
+nav{
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #2d2d2d;
+    position: relative;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+nav ul li{                    /* Navigationspunkte */
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+    margin-right: -4px;
+}
+
+nav ul li a{                /* Navigationspunkte - Verlinkung */
+    color: #fff;
+    text-decoration: none;
+    padding: 28px 47px;
+    display: block;
+    margin: 0;
+}
+
+nav ul li a:hover{
+    color: #fff;
+}
+
+nav ul li:hover{
+    background: #202020; /* oder #ff6b00 */
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li i{            /* Pfeile neben Dropdown */
+    float: right;
+    padding-left: 20px;
+}
+
+nav .Menu{
+    background: #2d2d2d;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav .Menu{
+    display: none;
+}
+
+/* */
+/* --- Navigation - Ende ---*/
+/* */
+
+
+/* */
+/* --- Landing-Page - Start ---*/
+/* */
+
+.BGStart{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(../Bilder/Mountain.jpg) no-repeat 50% 50%;
+    top: 0;
+    display: table;
+    background-size: cover;
+}
+.BGStart .CoverStart{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+}
+
+.StartTitel{
+    text-shadow: 0px 0px 60px #000;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.StartButton{
+    margin-top: 260px;
+}
+
+.StartButton a i{
+    text-shadow: 0px 0px 10px #000;
+    font-size: 100px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.StartButton a:hover i{
+    color: #007ad6;
+    margin-top: 10px;
+}
+
+/* */
+/* --- Landing-Page - Ende ---*/
+/* */
+
+.skewedDIV, .skewedDIV_LR{
+    width: 100%;
+    height: 0px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.skewedDIV:before{
+    content: '';
+    width: 50%;
+    height: 140px;
+    position: absolute;
+    top: -85px;
+    left: 0;
+    background: #fff;
+    transform: skewY(6.5deg);
+}
+
+.skewedDIV:after{
+    content: '';
+    width: 50%;
+    height: 140px;
+    position: absolute;
+    top: -85px;
+    right: 0;
+    background: #fff;
+    transform: skewY(-6.5deg);
+}
+
+.skewedDIV_LR:after{
+    content: '';
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background: #ffffff;
+    transform: skewY(-4deg);
+}
+
+/* */
+/* --- Übermich - Start ---*/
+/* */
+
+.UeberMich{
+    height: auto;
+    overflow: hidden;
+    margin: 0 10%;
+    text-align: center;
+}
+
+.UeberMich h2{
+    z-index: 1;
+    position: relative;
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.AboutText{
+    font-size: 130%;
+    font-weight: 300;
+    word-spacing: 5px;
+    margin-top: 50px;
+    width: 60%;
+    float: left;
+}
+
+.AboutBild{
+    text-align: center;
+    height: auto;
+    width: 40%;
+    float: right;
+}
+
+.AboutBild img{
+    height: 570px;
+}
+.icons{
+    color: #000;
+    margin-top: 50px;
+}
+
+.icons i{
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 70px;
+    margin: 20px 30px;
+}
+
+.icons i:hover{
+    color: #007ad6;
+    margin: 20px;
+}
+
+.icons a, .icons a:visited{
+    color: #000;
+}
+
+.icons i p{
+    font-size: 25px;
+}
+
+/* */
+/* --- Übermich - Ende ---*/
+/* */
+
+
+.parallax {
+    background-image: url('../Bilder/Mountain.jpg');
+    height: 60%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxTxt{
+    font-size: 60px;
+    position: absolute;
+    margin-top: 150px;
+    font-weight: 250;
+    text-shadow: 0px 0px 10px #000000;
+    letter-spacing: 10px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* */
+/* --- Konatkt - Start ---*/
+/* */
+
+.GMaps{
+    margin-top: 150px;
+}
+
+.Kontakt{
+    width: 100%;
+}
+
+.Kontakt h1{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.Kontakt form{
+    width: 40%;
+    margin: 50px auto;
+    padding: 0;
+}
+.Kontakt input[type="text"], input[type="email"], textarea{
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.Kontakt input, textarea{
+    width: 100%;  
+    padding: 7px;
+    border: 2px solid #575757;
+    box-sizing: border-box;
+    margin-bottom: 10px;  
+    margin-top: -8px;
+}
+
+.Buttons{
+    text-align: center;
+}
+
+.Kontakt textarea{
+    width: 100%;
+    height: 200px;
+    border: 2px solid #575757;  
+    margin-top: -8px;
+}
+.Buttons input{
+    width: 40%;
+    background: #fff;
+    margin: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 12px 10px;
+    cursor: pointer;
+    border: 2px solid #575757;
+    transition: 0.3s;
+    color: #575757;
+}
+
+.Buttons input:hover {
+    background-color: #007ad6;
+    border: 2px solid #007ad6;
+    color: #ffffff;
+}
+
+.Kontakt input:focus, textarea:focus{
+    border: 2px solid #007ad6;
+    outline: none;
+}
+
+/* */
+/* --- Kontakt - Ende ---*/
+/* */
+
+.BackToTop{
+    font-size: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    line-height: 100px;
+    background: #007ad6;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.BackToTop a:visited{
+    color: #fff;
+}
+
+.BackToTop:hover{
+    padding-bottom: 5px;
+    transition: 0.2s;
+}
+
+
+.slideIn{
+    visibility: hidden;
+}
+
+.slide{
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+     -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@-webkit-keyframes slide{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(00%)
+    }
+}
+
+@media(max-width: 1400px){
+    .AboutBild{
+        width: 100%;
+    }
+    .AboutText{
+        width: 100%;
+    }
+    
+    .AboutBild img{
+        height: auto;
+        width: 30%;
+        min-width: 200px;
+    }
+    
+    .Kontakt form{
+        width: 60%;
+    }
+}
+
+
+
+
+@media(max-width: 800px){
+    .Kontakt form{
+        width: 80%;
+    }
+}
+
+
+@media(max-width: 786px) {
+    nav .Menu{
+        display: grid;
+        text-align: right;
+        padding: 15px 24px;
+    }
+                
+    nav ul{
+        display: none;
+        position: static;
+        background: #2d2d2d;
+    }
+                
+    nav ul li{
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
